@@ -1,6 +1,5 @@
 package ru.netology.rest;
 
-import static io.restassured.RestAssured.authentication;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
