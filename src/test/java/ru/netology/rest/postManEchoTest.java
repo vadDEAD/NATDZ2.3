@@ -19,7 +19,7 @@ public class postManEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some  Data"))
+                .body("data", equalTo("some lame Data"))
         ;
     }
 }
