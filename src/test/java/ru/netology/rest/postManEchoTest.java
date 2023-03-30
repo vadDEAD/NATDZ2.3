@@ -1,5 +1,9 @@
 package ru.netology.rest;
 
+import static io.restassured.RestAssured.authentication;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
 import org.junit.jupiter.api.Test;
 
 public class postManEchoTest {
@@ -16,7 +20,7 @@ public class postManEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("some lame Data")
+                .body("data", equalTo("some lame Data"))
         ;
     }
 }
